@@ -119,6 +119,17 @@ void loop() {
             digitalWrite(3, HIGH);
 
             digitalWrite(buzzer, HIGH);   // turn the LED on (HIGH is the voltage level)
+
+            delay(500);
+            digitalWrite(3, LOW);
+            delay(500);
+            digitalWrite(3, HIGH);
+            delay(500);
+            digitalWrite(3, LOW);
+            delay(500);
+            digitalWrite(3, HIGH);
+
+
             Serial.println("Alarm on");
             digitalWrite(ledPin, HIGH);  
             awayMode = false;
